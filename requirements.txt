@@ -2,8 +2,11 @@ streamlit
 pandas
 numpy
 nltk
-spacy
-arxiv
+spacy>=3.7,<3.9
+arxiv>=2.1
 sentence-transformers
-en-core-web-sm
-
+torch
+faiss-cpu
+bertopic
+# spaCy model is not on PyPI under this name; install it from the official release
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
